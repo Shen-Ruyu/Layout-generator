@@ -1,4 +1,4 @@
-# layout-generator
+# Layout-generator
 
 ## Requirement
 
