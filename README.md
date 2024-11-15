@@ -56,6 +56,16 @@ The users must provide at least one valid layout file path which contain the dir
 
 Run the script from the command line, three examples command is shown below:
 
-python layout_generator.py --emmc_file "/path/to/eMMC_layout_1.0.xlsx" --nor_file "/path/to/NOR_Layout_1.0.xlsx" --sram_file "/path/to/SRAM_layout_1.0.xlsx" --generated_path "/path/to/output"
-python layout_generator.py --emmc_file "/path/to/eMMC_layout_1.0.xlsx" --nor_file "/path/to/NOR_Layout_1.0.xlsx" --generated_path "/path/to/output"
-python layout_generator.py --emmc_file "/path/to/eMMC_layout_1.0.xlsx" --generated_path "/path/to/output"
+### generate  from excel file
+```bash
+# example generate all the layouts: emmc / nor / sram layout
+python layout_generator.py --emmc_file="/path/to/eMMC_layout_1.0.xlsx" --nor_file="/path/to/NOR_Layout_1.0.xlsx" --sram_file="/path/to/SRAM_layout_1.0.xlsx" --generated_path="/path/to/output"
+# example generate two layouts 
+python layout_generator.py --emmc_file="/path/to/eMMC_layout_1.0.xlsx" --nor_file="/path/to/NOR_Layout_1.0.xlsx" --generated_path="/path/to/output"
+# example to generate single layout
+python layout_generator.py --emmc_file="/path/to/eMMC_layout_1.0.xlsx" --generated_path="/path/to/output"
+```
+### generate from yaml file
+```bash
+python yml_layout_generator.py --output-dir="path/to/output" --layout-dirs="/path/to/yaml"
+```
